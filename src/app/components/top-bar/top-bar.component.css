@@ -1,0 +1,32 @@
+.top-image {
+  width: 100%;
+  height: auto;
+}
+.title {
+  margin-left: 20%;
+  margin-bottom: 15px;
+  font-weight: 900;
+  font-size: 30px;
+}
+.subtitle {
+  margin-left: 20%;
+  font-size: 15px;
+}
+.margin-left {
+  margin-left: 20%;
+}
+.subtitle2 {
+  font-size: 15px;
+  padding-right: 30px;
+}
+.subtitle3 {
+  font-size: 15px;
+  margin-left: 20%;
+}
+.icon {
+  font-size: 20px;
+}
+.example-card {
+  border-bottom: 1px solid gray;
+}
+
