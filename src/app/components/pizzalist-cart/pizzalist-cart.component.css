@@ -1,12 +1,13 @@
 .main-div{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  margin-left: 10%;
 }
 .main-div2{
   display: flex;
-  justify-content: right;
-  margin-right: 20%;
+  flex-direction: column;
+  margin-right: 10%;
   align-items: center;
 }

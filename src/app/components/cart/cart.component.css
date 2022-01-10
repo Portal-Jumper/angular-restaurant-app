@@ -1,0 +1,68 @@
+/*.example-card {*/
+/*  display: flex;*/
+/*  border: 1px groove;*/
+/*  width: 25vw;*/
+/*  margin-left: 50px;*/
+/*}*/
+/*.example-card2 {*/
+/*  display: flex;*/
+/*  border: 1px groove;*/
+/*  width: 25vw;*/
+/*  min-height: 300px;*/
+/*  margin-left: 50px;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*}*/
+.image {
+  display: flex;
+  max-width: 250px;
+  max-height: 250px;
+}
+.size {
+  width: 300px;
+  display: flex;
+}
+.size2 {
+  display: flex;
+  width: 300px;
+}
+.fixed {
+  display: flex;
+  border: 1px groove;
+  width: 25vw;
+  margin-left: 50px;
+
+  position: sticky;
+  transition: 0.2s linear;
+  top: 150px;
+  z-index: 10000;
+}
+
+.fixed2 {
+  display: flex;
+  border: 1px groove;
+  width: 25vw;
+  min-height: 300px;
+  margin-left: 50px;
+  justify-content: center;
+  align-items: center;
+
+  position: sticky;
+  transition: 0.2s linear;
+  top: 213px;
+  z-index: 10000;
+}
+
+.fixed3 {
+  display: flex;
+  border: 1px groove;
+  width: 25vw;
+  margin-left: 50px;
+
+  position: sticky;
+  transition: 0.2s linear;
+  top: 547px;
+  z-index: 10000;
+}
+
+
