@@ -1,0 +1,28 @@
+.example-card {
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  max-height: 90px;
+  margin-bottom: 10px;
+  min-width: 40vw;
+}
+.image {
+  width: 120px;
+  height: 120px;
+  padding-right: 30px;
+}
+.margin-info {
+  padding-right: 25vw;
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+}
+.padding {
+  padding-right: 40px;
+}
+.text {
+  text-align: center;
+  color: green;
+}
+

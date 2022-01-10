@@ -1,0 +1,12 @@
+.main-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-div2{
+  display: flex;
+  justify-content: right;
+  margin-right: 20%;
+  align-items: center;
+}

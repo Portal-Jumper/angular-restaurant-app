@@ -6,11 +6,19 @@ import { AppComponent } from './app.component';
 import {MaterialModule} from "./modules/material/material.module";
 import { TopBarComponent } from './components/top-bar/top-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PizzaListComponent } from './components/pizza-list/pizza-list.component';
+import { PizzaItemComponent } from './components/pizza-item/pizza-item.component';
+import { PizzalistCartComponent } from './components/pizzalist-cart/pizzalist-cart.component';
+import { CartComponent } from './components/cart/cart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopBarComponent,
+    PizzaListComponent,
+    PizzaItemComponent,
+    PizzalistCartComponent,
+    CartComponent,
   ],
   imports: [
     BrowserAnimationsModule,
