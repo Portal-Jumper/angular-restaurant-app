@@ -1,5 +1,6 @@
 export class Pizza {
-  id?: number;
+  id!: number;
   name!: string;
+  price!: number;
   description!:string;
 }

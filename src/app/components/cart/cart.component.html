@@ -2,9 +2,13 @@
 <mat-card class="mat-card">
   <mat-card-title>Koszyk</mat-card-title>
 </mat-card>
-<mat-card class="mat-card2">
+<mat-card class="mat-card2" *ngIf="orders.length == 0">
   <img mat-card-image class="image" src="assets/img/shopping-cart.png">
 </mat-card>
+  <mat-card class="mat-card2" *ngIf="orders.length > 0">
+                    <app-pizza-order-item style="margin-bottom: 5px; width: 95%" *ngFor="let pizzaOrder of orders"
+                                          [pizzaOrder]="pizzaOrder"> </app-pizza-order-item>
+  </mat-card>
 <mat-card class="mat-card3">
   <mat-button-toggle-group style="border: 0; display: flex">
     <mat-button-toggle class="size">Dostawa</mat-button-toggle>
