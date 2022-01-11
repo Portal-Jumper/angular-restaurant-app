@@ -7,6 +7,7 @@ import {PizzaOrder} from "../models/PizzaOrder";
 export class PizzaOrderService {
 
   orders: PizzaOrder[] = [];
+  orderType: string = '';
 
   constructor() { }
 }

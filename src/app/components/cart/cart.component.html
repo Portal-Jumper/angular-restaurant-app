@@ -10,9 +10,9 @@
                                           [pizzaOrder]="pizzaOrder"> </app-pizza-order-item>
   </mat-card>
 <mat-card class="mat-card3">
-  <mat-button-toggle-group style="border: 0; display: flex">
-    <mat-button-toggle class="size">Dostawa</mat-button-toggle>
-    <mat-button-toggle class="size">Odbiór Osobisty</mat-button-toggle>
+  <mat-button-toggle-group  style="border: 0; display: flex">
+    <mat-button-toggle (change)="changeOrderType('dostawa')" class="size">Dostawa</mat-button-toggle>
+    <mat-button-toggle (change)="changeOrderType('odbiorOsobisty')" class="size">Odbiór Osobisty</mat-button-toggle>
   </mat-button-toggle-group>
 </mat-card>
 </div>
