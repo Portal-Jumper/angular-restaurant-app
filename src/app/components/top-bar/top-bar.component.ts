@@ -1,6 +1,5 @@
 import {Component, OnInit,} from '@angular/core';
 import {PizzaService} from "../../services/pizza.service";
-import {PizzaListComponent} from "../pizza-list/pizza-list.component";
 
 @Component({
   selector: 'app-top-bar',
