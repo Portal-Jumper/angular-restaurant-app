@@ -25,9 +25,5 @@ export class TopBarComponent implements OnInit {
     window.scrollBy({top: -100})
   }
 
-  change(x: string): void {
-    this.pizzaService.setQuery(x);
-}
-
 
 }

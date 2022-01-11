@@ -9,19 +9,11 @@ import { PizzaService } from 'src/app/services/pizza.service';
 })
 export class PizzaListComponent implements OnInit {
 
-  menu!: Pizza[];
+  menu: Pizza[] = [];
 
   constructor(private pizzaService: PizzaService) {
-    this.fillArray()
+    this.pizzaService.getMenu().subscribe(pizza => this.menu = pizza )
   }
-
-  public fillArray(): void {
-    this.pizzaService.getMenu().subscribe(
-      (todos: Pizza[]) => {
-        this.menu = todos;
-      },
-    )
-}
 
   ngOnInit(): void {
 

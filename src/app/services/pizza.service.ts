@@ -14,7 +14,7 @@ const HTTP_OPTIONS = {
 })
 export class PizzaService {
 
-  private query = ''
+  public query = ''
 
   private pizzaUrl = 'http://localhost:8080/api/?query=' + this.query;
 
@@ -22,11 +22,7 @@ export class PizzaService {
   }
 
   public getMenu(): Observable<Pizza[]> {
-    return this.httpClient.get<Pizza[]>(`${this.pizzaUrl}`, HTTP_OPTIONS);
-  }
-
-  public setQuery(x: string): void {
-    this.query = x;
+    return this.httpClient.get<Pizza[]>(`${this.pizzaUrl}`, HTTP_OPTIONS)
   }
 
 }
