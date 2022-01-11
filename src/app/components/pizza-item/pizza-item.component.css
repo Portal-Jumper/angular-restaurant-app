@@ -12,6 +12,7 @@
 }
 .margin-info {
   padding-right: 200px;
+  white-space: nowrap;
 }
 .price {
   display: flex;
@@ -23,5 +24,6 @@
 .text {
   text-align: center;
   color: green;
+  white-space: nowrap;
 }
 

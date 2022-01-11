@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Pizza} from "../../models/Pizza";
+import { PizzaService } from 'src/app/services/pizza.service';
 
 @Component({
   selector: 'app-pizza-list',
@@ -7,7 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PizzaListComponent implements OnInit {
 
-  constructor() { }
+  menu!: Pizza[];
+
+  constructor(private pizzaService: PizzaService) {
+    this.pizzaService.getTodos().subscribe(
+      (todos: Pizza[]) => {
+        this.menu = todos;
+      },
+    )
+  }
 
   ngOnInit(): void {
   }

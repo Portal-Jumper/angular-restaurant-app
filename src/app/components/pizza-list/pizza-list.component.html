@@ -1,2 +1,6 @@
-<app-pizza-item *ngFor="let i of [].constructor(20)"></app-pizza-item>
+<app-pizza-item id="menu" class="size"
+  *ngFor="let pizza of menu"
+  [pizza]="pizza"
+>
+</app-pizza-item>
 

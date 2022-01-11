@@ -1,21 +1,22 @@
 <mat-card class="fixed">
   <mat-card-subtitle class="margin-left">
-    <button mat-button class="subtitle2">Menu</button>
-    <button mat-button class="subtitle2">Promocje</button>
-    <button mat-button class="subtitle2">Informacje</button>
+    <button mat-button class="subtitle2" (click)="goTo('home')"><mat-icon>home</mat-icon></button>
+    <button mat-button class="subtitle2" (click)="goTo('menu')">Menu</button>
+    <button mat-button class="subtitle2" (click)="goTo('promo')">Promocje</button>
+    <button mat-button class="subtitle2" (click)="goTo('info')">Informacje</button>
   </mat-card-subtitle>
   <mat-card-subtitle class="margin-right">
     <button mat-button class="subtitle2">Logowanie/Rejestracja</button>
   </mat-card-subtitle>
 </mat-card>
-<mat-card class="example-card">
+<mat-card id="home" class="example-card">
   <img mat-card-image class= "top-image" src="assets/img/PizzeriaWloskaRobotaTop.png">
     <p class="title">Włoska Robota Pizzeria</p>
     <p class="subtitle">
       <mat-icon class="icon">place</mat-icon>
       Warszawa, ul. Krakowska 12b
     </p>
-  <p class="subtitle">
+  <p id="promo" class="subtitle">
     <mat-icon class="icon">phone</mat-icon>
     885 667 986
   </p>
@@ -25,7 +26,7 @@
     <p class="subtitle2">
       Minimalna kwota zamówienia: 30zł
     </p>
-    <p class="subtitle2">
+    <p id="info" class="subtitle2">
       Dowóz na terenie miasta: 0zł
     </p>
   </mat-card-content>

@@ -1,4 +1,4 @@
-import {Component, HostListener, OnInit,} from '@angular/core';
+import {Component, OnInit,} from '@angular/core';
 
 @Component({
   selector: 'app-top-bar',
@@ -6,6 +6,12 @@ import {Component, HostListener, OnInit,} from '@angular/core';
   styleUrls: ['./top-bar.component.css']
 })
 export class TopBarComponent implements OnInit {
+
+  goTo(location: string): void {
+    window.location.hash = '';
+    window.location.hash = location;
+    window.scrollBy({top: -100})
+  }
 
   constructor() { }
 
