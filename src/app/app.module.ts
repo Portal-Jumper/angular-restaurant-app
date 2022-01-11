@@ -13,6 +13,7 @@ import { PizzalistCartComponent } from './components/pizzalist-cart/pizzalist-ca
 import { CartComponent } from './components/cart/cart.component';
 import { PackageForPizzalistCartComponent } from './components/package-for-pizzalist-cart/package-for-pizzalist-cart.component';
 import { InfoComponent } from './components/info/info.component';
+import { PromoComponent } from './components/promo/promo.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { InfoComponent } from './components/info/info.component';
     CartComponent,
     PackageForPizzalistCartComponent,
     InfoComponent,
+    PromoComponent,
   ],
   imports: [
     BrowserAnimationsModule,

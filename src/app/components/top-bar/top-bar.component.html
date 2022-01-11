@@ -2,7 +2,7 @@
   <mat-card-subtitle class="margin-left">
     <button mat-button class="subtitle2" (click)="goToPlusScroll('home')"><mat-icon>home</mat-icon></button>
     <button mat-button class="subtitle2" (click)="goToPlusScroll('menu')">Menu</button>
-    <button mat-button class="subtitle2" (click)="goTo('promo')">Promocje</button>
+    <button mat-button class="subtitle2" (click)="goToPlusScroll('promo')">Promocje</button>
     <button mat-button class="subtitle2" (click)="goTo('info')">Informacje</button>
   </mat-card-subtitle>
   <mat-card-subtitle class="margin-right">
@@ -33,7 +33,7 @@
   <mat-card-content class="margin-right">
     <mat-form-field class="example-form-field" appearance="fill">
       <mat-label>Wyszukaj pizze</mat-label>
-      <input matInput type="text" #name required>
+      <input matInput type="text" #name required (input)="change(name.value)">
       <button matSuffix mat-icon-button (click)="name.value=' '">
         <mat-icon>close</mat-icon>
       </button>

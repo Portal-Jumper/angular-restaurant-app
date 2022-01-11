@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from "@angular/common/http";
-import {Observable} from "rxjs";
+import {Observable,} from "rxjs";
 import {Pizza} from "../models/Pizza";
 
 const HTTP_OPTIONS = {
@@ -14,11 +14,19 @@ const HTTP_OPTIONS = {
 })
 export class PizzaService {
 
-  private pizzaUrl = 'http://localhost:8080/api/menu';
+  private query = ''
 
-  constructor(private httpClient: HttpClient) { }
+  private pizzaUrl = 'http://localhost:8080/api/?query=' + this.query;
 
-  public getTodos(): Observable<Pizza[]> {
+  constructor(private httpClient: HttpClient) {
+  }
+
+  public getMenu(): Observable<Pizza[]> {
     return this.httpClient.get<Pizza[]>(`${this.pizzaUrl}`, HTTP_OPTIONS);
   }
+
+  public setQuery(x: string): void {
+    this.query = x;
+  }
+
 }

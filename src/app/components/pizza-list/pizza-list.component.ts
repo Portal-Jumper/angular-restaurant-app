@@ -12,14 +12,19 @@ export class PizzaListComponent implements OnInit {
   menu!: Pizza[];
 
   constructor(private pizzaService: PizzaService) {
-    this.pizzaService.getTodos().subscribe(
+    this.fillArray()
+  }
+
+  public fillArray(): void {
+    this.pizzaService.getMenu().subscribe(
       (todos: Pizza[]) => {
         this.menu = todos;
       },
     )
-  }
+}
 
   ngOnInit(): void {
+
   }
 
 }

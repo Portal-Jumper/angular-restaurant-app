@@ -1,4 +1,6 @@
 import {Component, OnInit,} from '@angular/core';
+import {PizzaService} from "../../services/pizza.service";
+import {PizzaListComponent} from "../pizza-list/pizza-list.component";
 
 @Component({
   selector: 'app-top-bar',
@@ -6,6 +8,13 @@ import {Component, OnInit,} from '@angular/core';
   styleUrls: ['./top-bar.component.css']
 })
 export class TopBarComponent implements OnInit {
+
+  constructor(private pizzaService: PizzaService,) { }
+
+
+  ngOnInit(): void {
+
+  }
 
   goTo(location: string): void {
     window.location.hash = '';
@@ -17,9 +26,9 @@ export class TopBarComponent implements OnInit {
     window.scrollBy({top: -100})
   }
 
-  constructor() { }
+  change(x: string): void {
+    this.pizzaService.setQuery(x);
+}
 
-  ngOnInit(): void {
-  }
 
 }
