@@ -38,6 +38,6 @@
   border-bottom: 1px solid gray;
   display: flex;
   justify-content: space-between;
-  z-index: 10000;
+  z-index: 10001;
 }
 

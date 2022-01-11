@@ -10,6 +10,10 @@ export class TopBarComponent implements OnInit {
   goTo(location: string): void {
     window.location.hash = '';
     window.location.hash = location;
+  }
+  goToPlusScroll(location: string): void {
+    window.location.hash = '';
+    window.location.hash = location;
     window.scrollBy({top: -100})
   }
 
