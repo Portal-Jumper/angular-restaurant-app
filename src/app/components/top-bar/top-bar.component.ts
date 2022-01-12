@@ -1,5 +1,4 @@
 import {Component, OnInit,} from '@angular/core';
-import {PizzaService} from "../../services/pizza.service";
 
 @Component({
   selector: 'app-top-bar',
@@ -8,7 +7,7 @@ import {PizzaService} from "../../services/pizza.service";
 })
 export class TopBarComponent implements OnInit {
 
-  constructor(private pizzaService: PizzaService,) { }
+  constructor() { }
 
 
   ngOnInit(): void {
