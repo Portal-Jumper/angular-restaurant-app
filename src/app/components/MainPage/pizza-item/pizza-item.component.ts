@@ -1,8 +1,8 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Pizza} from "../../models/Pizza";
+import {Pizza} from "../../../models/Pizza";
 import {CartComponent} from "../cart/cart.component";
-import {PizzaOrderService} from "../../services/pizza-order.service";
-import {PizzaOrder} from "../../models/PizzaOrder";
+import {PizzaOrderService} from "../../../services/pizza-order.service";
+import {PizzaOrder} from "../../../models/PizzaOrder";
 
 @Component({
   selector: 'app-pizza-item',

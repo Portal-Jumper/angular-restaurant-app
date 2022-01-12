@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {PizzaOrder} from "../../models/PizzaOrder";
-import {PizzaOrderService} from "../../services/pizza-order.service";
+import {PizzaOrder} from "../../../models/PizzaOrder";
+import {PizzaOrderService} from "../../../services/pizza-order.service";
 
 @Component({
   selector: 'app-cart',

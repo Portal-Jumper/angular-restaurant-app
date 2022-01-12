@@ -5,7 +5,7 @@
   <div style="overflow-y:auto;
     max-height:350px;">
 <mat-card class="mat-card2" *ngIf="orders.length == 0">
-  <img mat-card-image class="image" src="assets/img/shopping-cart.png">
+  <img mat-card-image class="image" src="../../../../assets/img/shopping-cart.png">
 </mat-card>
   <mat-card class="mat-card2" *ngIf="orders.length > 0">
                     <app-pizza-order-item style="margin-bottom: 5px; width: 95%" *ngFor="let pizzaOrder of orders"
