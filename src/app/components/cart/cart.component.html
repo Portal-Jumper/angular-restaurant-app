@@ -9,11 +9,17 @@
                     <app-pizza-order-item style="margin-bottom: 5px; width: 95%" *ngFor="let pizzaOrder of orders"
                                           [pizzaOrder]="pizzaOrder"> </app-pizza-order-item>
   </mat-card>
-<mat-card class="mat-card3">
-  <mat-button-toggle-group  style="border: 0; display: flex">
-    <mat-button-toggle (change)="changeOrderType('dostawa')" class="size">Dostawa</mat-button-toggle>
-    <mat-button-toggle (change)="changeOrderType('odbiorOsobisty')" class="size">Odbiór Osobisty</mat-button-toggle>
-  </mat-button-toggle-group>
-</mat-card>
+  <mat-card class="mat-card3">
+    <mat-button-toggle-group  style="border: 0; display: flex">
+      <mat-button-toggle (change)="changeOrderType('dostawa')" class="size">Dostawa</mat-button-toggle>
+      <mat-button-toggle (change)="changeOrderType('odbiorOsobisty')" class="size">Odbiór Osobisty</mat-button-toggle>
+    </mat-button-toggle-group>
+  </mat-card>
+  <mat-card class="mat-card3">
+    <mat-card-content style="border: 0; display: flex">
+      <mat-card-content class="text">Suma: {{checkPrice()}} zł.</mat-card-content>
+      <button mat-button class="button">Zakończ zamówienie</button>
+    </mat-card-content>
+  </mat-card>
 </div>
 

@@ -25,8 +25,13 @@ export class PizzaOrderItemComponent implements OnInit {
         value.arrid -= 1;
       }
     } )
-    console.log(this.pizzaOrderService.orders)
+    this.countOrderPrice();
   }
 
+  public countOrderPrice(): void {
+    let price: number = 0;
+    this.pizzaOrderService.orders.forEach(x => price += x.price)
+    this.pizzaOrderService.ordersPrice = price;
+  }
 
 }

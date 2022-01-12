@@ -14,7 +14,7 @@ const HTTP_OPTIONS = {
 })
 export class PizzaService {
 
-  public query = ''
+  private query = ''
 
   private pizzaUrl = 'http://localhost:8080/api/?query=' + this.query;
 

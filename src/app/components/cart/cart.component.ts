@@ -22,4 +22,7 @@ export class CartComponent implements OnInit {
     console.log(x);
   }
 
+  public checkPrice(): number {
+    return Math.round(this.pizzaOrderService.ordersPrice * 100) / 100
+}
 }
