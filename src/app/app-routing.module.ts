@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {PackageForPizzalistCartComponent} from "./components/package-for-pizzalist-cart/package-for-pizzalist-cart.component";
 import {CartComponent} from "./components/cart/cart.component";
+import {MainPageComponent} from "./components/main-page/main-page.component";
 
 const routes: Routes = [
-  {path: '', component: PackageForPizzalistCartComponent},
+  {path: '', component: MainPageComponent},
   {path: 'login', component: CartComponent},
 ];
 
