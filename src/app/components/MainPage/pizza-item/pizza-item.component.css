@@ -2,7 +2,6 @@
   border-bottom: 1px solid gray;
   display: flex;
   justify-content: space-between;
-  max-height: 90px;
   margin-bottom: 10px;
 }
 .image {
@@ -11,7 +10,6 @@
   padding-right: 30px;
 }
 .margin-info {
-  padding-right: 200px;
   white-space: nowrap;
 }
 .price {
@@ -25,5 +23,12 @@
   text-align: center;
   color: green;
   white-space: nowrap;
+}
+.rate {
+  width: 130px;
+  max-height: 50px;
+  margin-left: 10px;
+  margin-top: 30px;
+  margin-right: 30px
 }
 
