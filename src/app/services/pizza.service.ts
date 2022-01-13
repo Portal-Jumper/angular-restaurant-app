@@ -16,7 +16,9 @@ export class PizzaService {
 
   private query = ''
 
-  private pizzaUrl = 'http://localhost:8080/api/?query=' + this.query;
+  // private pizzaUrl = 'http://localhost:8080/api/?query=' + this.query;
+
+  private pizzaUrl = 'http://localhost:8080/api/menu'
 
   constructor(private httpClient: HttpClient) {
   }

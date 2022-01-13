@@ -7,17 +7,17 @@
   <mat-card-content class="price">
     <mat-card-content class="padding">
       <p class="text">Mała 32cm</p>
-      <p class="text">20.90zł</p>
+      <p class="text">{{pizza.smallPrice}} zł</p>
       <button mat-button (click)="addOrderSmall()">Zamów</button>
     </mat-card-content>
     <mat-card-content class="padding">
       <p class="text">Średnia 45cm</p>
-      <p class="text">29.90zł</p>
+      <p class="text">{{pizza.mediumPrice}} zł</p>
       <button mat-button (click)="addOrderMedium()">Zamów</button>
     </mat-card-content>
     <mat-card-content class="padding">
       <p class="text">Duża 60cm</p>
-      <p class="text">44.90zł</p>
+      <p class="text">{{pizza.bigPrice}} zł</p>
       <button mat-button (click)="addOrderLarge()">Zamów</button>
     </mat-card-content>
   </mat-card-content>

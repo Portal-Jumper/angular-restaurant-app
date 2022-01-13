@@ -21,17 +21,17 @@ export class PizzaItemComponent implements OnInit {
 
   public addOrderSmall(): void {
     this.pizzaOrderService.orders.push(new PizzaOrder(
-      this.pizzaOrderService.orders.length,this.pizza.id,this.pizza.name,"mała",10.61))
+      this.pizzaOrderService.orders.length,this.pizza.id,this.pizza.name,"mała",this.pizza.smallPrice))
     this.countOrderPrice();
   }
   public addOrderMedium(): void {
     this.pizzaOrderService.orders.push(new PizzaOrder(
-      this.pizzaOrderService.orders.length,this.pizza.id,this.pizza.name,"średnia",23.23))
+      this.pizzaOrderService.orders.length,this.pizza.id,this.pizza.name,"średnia",this.pizza.mediumPrice))
     this.countOrderPrice();
   }
   public addOrderLarge(): void {
     this.pizzaOrderService.orders.push(new PizzaOrder(
-      this.pizzaOrderService.orders.length,this.pizza.id,this.pizza.name,"duża",31.20))
+      this.pizzaOrderService.orders.length,this.pizza.id,this.pizza.name,"duża",this.pizza.bigPrice))
     this.countOrderPrice();
   }
 

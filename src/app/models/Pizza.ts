@@ -1,7 +1,8 @@
 export class Pizza {
   id!: number;
   name!: string;
-  price!: number;
   description!:string;
-
+  smallPrice!: number;
+  mediumPrice!: number;
+  bigPrice!: number;
 }
