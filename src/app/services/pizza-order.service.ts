@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
 import {PizzaOrder} from "../models/PizzaOrder";
 import {HttpClient, HttpHeaders} from "@angular/common/http";
-import {Pizza} from "../models/Pizza";
-import {catchError, Observable} from "rxjs";
 
 const HTTP_OPTIONS = {
   headers: new HttpHeaders({

@@ -16,6 +16,14 @@ import { InfoComponent } from './components/MainPage/info/info.component';
 import { PromoComponent } from './components/MainPage/promo/promo.component';
 import { PizzaOrderItemComponent } from './components/MainPage/pizza-order-item/pizza-order-item.component';
 import { MainPageComponent } from './components/MainPage/main-page/main-page.component';
+import { RatingPageComponent } from './components/ratingPage/rating-page/rating-page.component';
+import { LoginPageComponent } from './components/loginPage/login-page/login-page.component';
+import { TopBarLoginComponent } from './components/loginPage/top-bar-login/top-bar-login.component';
+import { TopBarRatingComponent } from './components/ratingPage/top-bar-rating/top-bar-rating.component';
+import { RatingMainComponent } from './components/ratingPage/rating-main/rating-main.component';
+import { LoginMainComponent } from './components/loginPage/login-main/login-main.component';
+import { RatingListComponent } from './components/ratingPage/rating-list/rating-list.component';
+import { RatingItemComponent } from './components/ratingPage/rating-item/rating-item.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +38,14 @@ import { MainPageComponent } from './components/MainPage/main-page/main-page.com
     PromoComponent,
     PizzaOrderItemComponent,
     MainPageComponent,
+    RatingPageComponent,
+    LoginPageComponent,
+    TopBarLoginComponent,
+    TopBarRatingComponent,
+    RatingMainComponent,
+    LoginMainComponent,
+    RatingListComponent,
+    RatingItemComponent,
   ],
   imports: [
     BrowserAnimationsModule,
