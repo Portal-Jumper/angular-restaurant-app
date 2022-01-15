@@ -15,6 +15,11 @@ export class PizzaListComponent implements OnInit {
     this.pizzaService.getMenu().subscribe(data => this.menu = data,);
   }
 
+  public updateMenu(query: String): void {
+    this.pizzaService.query = query
+    this.pizzaService.getMenu().subscribe(data => this.menu = data,);
+  }
+
   ngOnInit(): void {
   }
 }

@@ -19,7 +19,6 @@ export class CartComponent implements OnInit {
 
   public changeOrderType(x: string): void {
     this.pizzaOrderService.orderType = x;
-    console.log(x);
   }
 
   public checkPrice(): number {

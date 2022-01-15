@@ -1,3 +1,10 @@
+<mat-form-field class="example-form-field" appearance="fill">
+  <mat-label>Wyszukaj pizze</mat-label>
+  <input matInput (input)="updateMenu(name.value)" type="text" #name required>
+  <button matSuffix mat-icon-button (click)="name.value=' '">
+    <mat-icon>close</mat-icon>
+  </button>
+</mat-form-field>
 <app-pizza-item id="menu" class="size"
   *ngFor="let pizza of menu"
   [pizza]="pizza"

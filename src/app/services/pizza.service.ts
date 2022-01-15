@@ -14,18 +14,24 @@ const HTTP_OPTIONS = {
 })
 export class PizzaService {
 
-  private query = ''
+  private _query: String = ''
 
-  // private pizzaUrl = 'http://localhost:8080/api/?query=' + this.query;
-
-  private pizzaUrl = 'http://localhost:8080/api/menu'
+  private pizzaUrl = 'http://localhost:8080/api/menu?query=' + this._query;
 
   constructor(private httpClient: HttpClient) {
   }
 
   public getMenu(): Observable<Pizza[]> {
+    this.pizzaUrl = 'http://localhost:8080/api/menu?query=' + this._query;
     return this.httpClient.get<Pizza[]>(`${this.pizzaUrl}`, HTTP_OPTIONS)
   }
 
 
+  get query(): String {
+    return this._query;
+  }
+
+  set query(value: String) {
+    this._query = value;
+  }
 }
