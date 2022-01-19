@@ -16,6 +16,7 @@ export class RegisterMainComponent implements OnInit {
   register(username: String, password: String, phoneNumber: String, mail: String, name: String,
            surname: String, street: String, streetNumber: String, city: String, postalCode: String): void {
     this.registerService.register(username,password,phoneNumber,mail,name,surname,street,streetNumber,city,postalCode)
+
   }
 
 }

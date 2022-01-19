@@ -33,6 +33,8 @@ export class RegisterServiceService {
       "streetNumber": streetNumber,
       "city": city,
       "postalCode": postalCode
-    } , HTTP_OPTIONS).subscribe();
+    } , HTTP_OPTIONS).subscribe(resp => {
+      this.router.navigate(['/login'])
+    });
   }
 }
