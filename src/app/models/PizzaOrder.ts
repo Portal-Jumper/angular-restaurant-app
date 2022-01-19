@@ -1,6 +1,6 @@
 export class PizzaOrder {
   arrid!: number;
-  id!: number;
+  pizzaId!: number;
   name!: string;
   size!: string;
   price!: number;
@@ -8,7 +8,7 @@ export class PizzaOrder {
 
   constructor(arrid: number,id: number, name: string, size: string, price: number) {
     this.arrid = arrid;
-    this.id = id;
+    this.pizzaId = id;
     this.name = name;
     this.size = size;
     this.price = price;

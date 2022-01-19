@@ -76,6 +76,8 @@
       </button>
     </mat-form-field>
   </mat-card-content>
-  <button mat-raised-button style=" width: 150px; margin-bottom: 20px; margin-top: 20px;" color="primary">
+  <button mat-raised-button style=" width: 150px; margin-bottom: 20px; margin-top: 20px;" color="primary"
+          (click)="register(login.value, password.value, phone_number.value, email.value, name.value, surname.value,
+          street.value, street_number.value, city.value, postal_code.value)">
     Zarejestruj się</button>
 </mat-card>
