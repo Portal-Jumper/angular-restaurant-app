@@ -25,9 +25,8 @@ export class TopBarComponent implements OnInit {
     window.scrollBy({top: -100})
   }
 
-  logIn(): void {
-    this.loginService.logIn();
-  }
-
+  isLoggedIn(): boolean {
+    return this.loginService.loggedIn
+}
 
 }

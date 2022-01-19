@@ -14,5 +14,7 @@
       <mat-icon>close</mat-icon>
     </button>
   </mat-form-field>
-  <button mat-raised-button style=" width: 150px; margin-bottom: 20px; margin-top: 20px;" color="primary">Zaloguj</button>
+  <button mat-raised-button style=" width: 150px; margin-bottom: 20px; margin-top: 20px;" color="primary"
+          (click)="logIn(login.value, password.value)"
+  >Zaloguj</button>
 </mat-card>
