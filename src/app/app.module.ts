@@ -24,6 +24,10 @@ import { RatingMainComponent } from './components/ratingPage/rating-main/rating-
 import { LoginMainComponent } from './components/loginPage/login-main/login-main.component';
 import { RatingListComponent } from './components/ratingPage/rating-list/rating-list.component';
 import { RatingItemComponent } from './components/ratingPage/rating-item/rating-item.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { RegisterPageComponent } from './components/registerPage/register-page/register-page.component';
+import { TopBarRegisterComponent } from './components/registerPage/top-bar-register/top-bar-register.component';
+import { RegisterMainComponent } from './components/registerPage/register-main/register-main.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +50,9 @@ import { RatingItemComponent } from './components/ratingPage/rating-item/rating-
     LoginMainComponent,
     RatingListComponent,
     RatingItemComponent,
+    RegisterPageComponent,
+    TopBarRegisterComponent,
+    RegisterMainComponent,
   ],
   imports: [
     BrowserAnimationsModule,
@@ -53,6 +60,8 @@ import { RatingItemComponent } from './components/ratingPage/rating-item/rating-
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

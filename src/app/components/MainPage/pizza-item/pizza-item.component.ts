@@ -3,6 +3,7 @@ import {Pizza} from "../../../models/Pizza";
 import {CartComponent} from "../cart/cart.component";
 import {PizzaOrderService} from "../../../services/pizza-order.service";
 import {PizzaOrder} from "../../../models/PizzaOrder";
+import {RatingService} from "../../../services/rating.service";
 
 @Component({
   selector: 'app-pizza-item',
@@ -14,7 +15,7 @@ export class PizzaItemComponent implements OnInit {
   @Input()
   public pizza!: Pizza;
 
-  constructor(private pizzaOrderService: PizzaOrderService) { }
+  constructor(private pizzaOrderService: PizzaOrderService, private ratingService: RatingService) { }
 
   ngOnInit(): void {
   }
@@ -37,7 +38,7 @@ export class PizzaItemComponent implements OnInit {
   public countOrderPrice(): void {
     let price: number = 0;
     this.pizzaOrderService.orders.forEach(x => price += x.price)
-    this.pizzaOrderService.ordersPrice = price;
+    this.pizzaOrderService.orderPrice = price;
   }
 
 }

@@ -12,18 +12,19 @@ const HTTP_OPTIONS = {
 @Injectable({
   providedIn: 'root'
 })
+
 export class PizzaService {
 
   private _query: String = ''
 
-  private pizzaUrl = 'http://localhost:8080/api/menu?query=' + this._query;
+  private menuUrl = 'http://localhost:8080/api/menu?query=' + this._query;
 
   constructor(private httpClient: HttpClient) {
   }
 
   public getMenu(): Observable<Pizza[]> {
-    this.pizzaUrl = 'http://localhost:8080/api/menu?query=' + this._query;
-    return this.httpClient.get<Pizza[]>(`${this.pizzaUrl}`, HTTP_OPTIONS)
+    this.menuUrl = 'http://localhost:8080/api/menu?query=' + this._query;
+    return this.httpClient.get<Pizza[]>(`${this.menuUrl}`, HTTP_OPTIONS)
   }
 
 

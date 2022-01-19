@@ -31,7 +31,7 @@ export class PizzaOrderItemComponent implements OnInit {
   public countOrderPrice(): void {
     let price: number = 0;
     this.pizzaOrderService.orders.forEach(x => price += x.price)
-    this.pizzaOrderService.ordersPrice = price;
+    this.pizzaOrderService.orderPrice = price;
   }
 
 }

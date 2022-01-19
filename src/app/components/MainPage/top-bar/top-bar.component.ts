@@ -1,4 +1,5 @@
 import {Component, OnInit,} from '@angular/core';
+import {LoginService} from "../../../services/login.service";
 
 @Component({
   selector: 'app-top-bar',
@@ -7,7 +8,7 @@ import {Component, OnInit,} from '@angular/core';
 })
 export class TopBarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private loginService: LoginService) { }
 
 
   ngOnInit(): void {
@@ -22,6 +23,10 @@ export class TopBarComponent implements OnInit {
     window.location.hash = '';
     window.location.hash = location;
     window.scrollBy({top: -100})
+  }
+
+  logIn(): void {
+    this.loginService.logIn();
   }
 
 

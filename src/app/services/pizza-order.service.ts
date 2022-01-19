@@ -17,7 +17,7 @@ export class PizzaOrderService {
 
   orders: PizzaOrder[] = [];
   orderType: string = '';
-  ordersPrice: number = 0;
+  orderPrice: number = 0;
 
   constructor(private httpClient: HttpClient) {
   }

@@ -6,7 +6,3 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: ghostwhite;
 }
-
-.example-spacer {
-  flex: 1 1 auto;
-}
