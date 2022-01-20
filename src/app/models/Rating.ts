@@ -1,7 +1,7 @@
 export class Rating {
   id!: number;
   pizzaId!: number;
-  username!: String
+  user!: String
   grade!: number;
   content!: String;
 }
