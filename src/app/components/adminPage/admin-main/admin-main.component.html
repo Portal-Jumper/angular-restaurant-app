@@ -26,5 +26,44 @@
       <div mat-line>Aktywny:</div>
       <div mat-line>{{user.active}}</div>
     </div>
+    <button mat-raised-button style="width: 150px; max-height: 50px;"
+            (click)="setId(user.id)" [routerLink]="['/edit']" color="primary">
+      Edytuj</button>
   </mat-list-item>
+
+
+  <div style="display:flex; justify-content:space-between; margin-right: 10%; margin-bottom: 20px; margin-top: 100px">
+    <mat-list style="margin-right: 10%; margin-bottom: 50px;">
+      <div mat-subheader>Zamówienia:</div>
+      <mat-list-item style="display: flex" *ngFor="let order of orders">
+        <mat-icon mat-list-icon>local_pizza</mat-icon>
+        <div style="margin-right: 20px;">
+          <div mat-line>Imię i nazwisko:</div>
+          <div mat-line>{{order.name}} {{order.surname}}</div>
+        </div>
+        <div style="margin-right: 20px;">
+          <div mat-line>Adres:</div>
+          <div mat-line>{{order.street}} {{order.streetNumber}} {{order.city}} {{order.postalCode}}</div>
+        </div>
+        <div style="margin-right: 20px;">
+          <div mat-line>Numer telefonu:</div>
+          <div mat-line>{{order.phoneNumber}}</div>
+        </div>
+        <div style="margin-right: 20px;">
+          <div mat-line>Typ:</div>
+          <div mat-line>{{order.deliveryType}}</div>
+        </div>
+        <div style="margin-right: 20px;">
+          <div mat-line>Cena: </div>
+          <div mat-line>{{order.price}}</div>
+        </div>
+        <div style="margin-right: 20px;">
+          <div mat-line>Zamówione pizze: </div>
+          <div mat-line *ngFor="let pizzaOrder of order.orderedPizzas">
+            {{pizzaOrder.name}} {{pizzaOrder.size}}</div>
+        </div>
+      </mat-list-item>
+    </mat-list>
+  </div>
+
 </mat-list>
