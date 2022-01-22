@@ -34,6 +34,8 @@ import { AdminMainComponent } from './components/adminPage/admin-main/admin-main
 import { EditPageComponent } from './components/editPage/edit-page/edit-page.component';
 import { EditMainComponent } from './components/editPage/edit-main/edit-main.component';
 import { TopBarEditComponent } from './components/editPage/top-bar-edit/top-bar-edit.component';
+import { UserPageComponent } from './components/userPage/user-page/user-page.component';
+import { UserMainComponent } from './components/userPage/user-main/user-main.component';
 
 @NgModule({
   declarations: [
@@ -65,6 +67,8 @@ import { TopBarEditComponent } from './components/editPage/top-bar-edit/top-bar-
     EditPageComponent,
     EditMainComponent,
     TopBarEditComponent,
+    UserPageComponent,
+    UserMainComponent,
   ],
   imports: [
     BrowserAnimationsModule,

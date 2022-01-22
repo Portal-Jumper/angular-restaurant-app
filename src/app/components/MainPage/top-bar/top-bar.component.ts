@@ -29,4 +29,12 @@ export class TopBarComponent implements OnInit {
     return this.loginService.loggedIn
 }
 
+  admin(): boolean {
+    return this.loginService.authorities.includes('ROLE_ADMIN')
+  }
+
+  user(): boolean {
+    return this.loginService.authorities.includes('ROLE_USER')
+  }
+
 }

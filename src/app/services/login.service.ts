@@ -16,11 +16,13 @@ export class LoginService {
 
   private helper = new JwtHelperService();
 
+  private _userId: number = 0;
   private _username: String = '';
   private password: String = '';
   private body: String = '';
   private _token: any = '';
   private _loggedIn: boolean = false;
+  private _authorities: String[] = []
 
   constructor(private httpClient: HttpClient, private router: Router,) {
 
@@ -41,6 +43,8 @@ export class LoginService {
       this._token = resp.headers.get('Authorization');
       this.router.navigate([''])
       this._loggedIn = true;
+      this._authorities = this.helper.decodeToken(this.token).authorities
+      this._userId = this.helper.decodeToken(this.token).id
     });
   }
 
@@ -52,7 +56,6 @@ export class LoginService {
         'Authorization': 'Bearer ' + this.token
       })
     })
-
   }
 
 
@@ -66,5 +69,15 @@ export class LoginService {
 
   get username(): String {
     return this._username;
+  }
+
+
+  get authorities(): String[] {
+    return this._authorities;
+  }
+
+
+  get userId(): number {
+    return this._userId;
   }
 }
