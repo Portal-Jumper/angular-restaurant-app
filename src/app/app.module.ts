@@ -31,6 +31,9 @@ import { RegisterMainComponent } from './components/registerPage/register-main/r
 import { AdminPageComponent } from './components/adminPage/admin-page/admin-page.component';
 import { TopBarAdminComponent } from './components/adminPage/top-bar-admin/top-bar-admin.component';
 import { AdminMainComponent } from './components/adminPage/admin-main/admin-main.component';
+import { EditPageComponent } from './components/editPage/edit-page/edit-page.component';
+import { EditMainComponent } from './components/editPage/edit-main/edit-main.component';
+import { TopBarEditComponent } from './components/editPage/top-bar-edit/top-bar-edit.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +62,9 @@ import { AdminMainComponent } from './components/adminPage/admin-main/admin-main
     AdminPageComponent,
     TopBarAdminComponent,
     AdminMainComponent,
+    EditPageComponent,
+    EditMainComponent,
+    TopBarEditComponent,
   ],
   imports: [
     BrowserAnimationsModule,
