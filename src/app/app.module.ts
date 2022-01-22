@@ -28,6 +28,9 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { RegisterPageComponent } from './components/registerPage/register-page/register-page.component';
 import { TopBarRegisterComponent } from './components/registerPage/top-bar-register/top-bar-register.component';
 import { RegisterMainComponent } from './components/registerPage/register-main/register-main.component';
+import { AdminPageComponent } from './components/adminPage/admin-page/admin-page.component';
+import { TopBarAdminComponent } from './components/adminPage/top-bar-admin/top-bar-admin.component';
+import { AdminMainComponent } from './components/adminPage/admin-main/admin-main.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +56,9 @@ import { RegisterMainComponent } from './components/registerPage/register-main/r
     RegisterPageComponent,
     TopBarRegisterComponent,
     RegisterMainComponent,
+    AdminPageComponent,
+    TopBarAdminComponent,
+    AdminMainComponent,
   ],
   imports: [
     BrowserAnimationsModule,

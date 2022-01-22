@@ -12,7 +12,7 @@ export class PizzaListComponent implements OnInit {
   menu: Pizza[] = [];
 
   constructor(private pizzaService: PizzaService) {
-    this.pizzaService.getMenu().subscribe(data => this.menu = data,);
+    this.pizzaService.getMenu().subscribe(data => this.menu = data);
   }
 
   public updateMenu(query: String): void {

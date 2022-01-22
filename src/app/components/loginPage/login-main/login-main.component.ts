@@ -11,6 +11,7 @@ export class LoginMainComponent implements OnInit {
   constructor(private loginService: LoginService) { }
 
   ngOnInit(): void {
+
   }
 
   logIn(username: String, password: String): void {

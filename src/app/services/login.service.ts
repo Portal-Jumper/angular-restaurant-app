@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {Router} from "@angular/router";
 import {JwtHelperService} from "@auth0/angular-jwt";
+import {User} from "../models/User";
+import {Observable} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
@@ -9,6 +11,8 @@ import {JwtHelperService} from "@auth0/angular-jwt";
 export class LoginService {
 
   private loginUrl = 'http://localhost:8080/login'
+
+  private usersUrl = 'http://localhost:8080/api/users'
 
   private helper = new JwtHelperService();
 
@@ -38,6 +42,17 @@ export class LoginService {
       this.router.navigate([''])
       this._loggedIn = true;
     });
+  }
+
+  users(): Observable<User[]> {
+
+    return this.httpClient.get<User[]>(this.usersUrl, {
+      headers : new HttpHeaders({
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + this.token
+      })
+    })
+
   }
 
 

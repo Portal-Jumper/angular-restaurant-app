@@ -4,12 +4,14 @@ import {MainPageComponent} from "./components/MainPage/main-page/main-page.compo
 import {LoginPageComponent} from "./components/loginPage/login-page/login-page.component";
 import {RatingPageComponent} from "./components/ratingPage/rating-page/rating-page.component";
 import {RegisterPageComponent} from "./components/registerPage/register-page/register-page.component";
+import {AdminPageComponent} from "./components/adminPage/admin-page/admin-page.component";
 
 const routes: Routes = [
   {path: '', component: MainPageComponent},
   {path: 'login', component: LoginPageComponent},
   {path: 'rating/:id', component: RatingPageComponent},
   {path: 'register', component: RegisterPageComponent},
+  {path: 'admin', component: AdminPageComponent},
 ];
 
 @NgModule({
